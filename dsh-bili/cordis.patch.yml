@@ -1,0 +1,5 @@
+# dsh-bili —— DSH bundle patch
+# 把插件插入 Web profile 的配置树。安装后重启 DSH 生效。
+- insert:
+    - id: dsh-bili
+      name: dsh-bili

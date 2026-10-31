@@ -1,0 +1,35 @@
+{
+  "name": "dsh-bili",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "让 DSH 直接连上 B站：手机扫码登录，然后聚合分析观看历史——看得最多的 UP 主、完成度分布、值得关注但还没关注的人。只读，凭据仅存本机。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "bilibili",
+    "b站"
+  ],
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wzmjn233/dsh-code.git"
+  }
+}
